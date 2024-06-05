@@ -15,7 +15,7 @@
   & path {
     @include themify() {
       fill: getThemifyVariable('console-active-arrow-color');
-      opacity: 1; 
+      opacity: 1;
     }
   }
 }
@@ -41,7 +41,7 @@
 
 .console__editor .CodeMirror {
   border: none;
-  font-family: Inconsolata,monospace;
+  font-family: Inconsolata, monospace;
   @include themify() {
     background-color: getThemifyVariable('console-input-background-color');
   }

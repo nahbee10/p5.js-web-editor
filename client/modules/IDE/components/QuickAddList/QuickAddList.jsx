@@ -11,7 +11,9 @@ const Item = ({ isAdded, onSelect, name, url }) => {
     ? t('QuickAddList.ButtonRemoveARIA')
     : t('QuickAddList.ButtonAddToCollectionARIA');
   return (
-    <li className="quick-add__item" onClick={onSelect}> { /* eslint-disable-line */ }
+    <li className="quick-add__item" onClick={onSelect}>
+      {' '}
+      {/* eslint-disable-line */}
       <button
         className="quick-add__item-toggle"
         onClick={onSelect}

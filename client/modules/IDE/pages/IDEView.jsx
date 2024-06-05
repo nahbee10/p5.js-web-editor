@@ -206,6 +206,7 @@ const IDEView = () => {
     ? consoleSize
     : consoleCollapsedSize;
 
+  console.log(Editor);
   return (
     <RootPage>
       <Helmet>
@@ -252,11 +253,11 @@ const IDEView = () => {
           </PreviewWrapper>
           <EditorSidebarWrapper show={!ide.isPlaying}>
             <Sidebar />
-            <Editor
+            {/* <Editor
               provideController={(ctl) => {
                 cmRef.current = ctl;
               }}
-            />
+            /> */}
           </EditorSidebarWrapper>
         </>
       ) : (

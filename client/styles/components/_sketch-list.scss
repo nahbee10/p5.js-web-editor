@@ -7,7 +7,7 @@
 
   @media (max-width: 770px) {
     @include themify() {
-      background-color: getThemifyVariable("modal-background-color");
+      background-color: getThemifyVariable('modal-background-color');
     }
 
     .sketches-table {
@@ -36,8 +36,10 @@
           gap: #{math.div(8, $base-font-size)}rem;
 
           @include themify() {
-            border: 1px solid getThemifyVariable("modal-border-color");
-            background-color: getThemifyVariable("search-background-color") !important;
+            border: 1px solid getThemifyVariable('modal-border-color');
+            background-color: getThemifyVariable(
+              'search-background-color'
+            ) !important;
           }
 
           > th {
@@ -53,7 +55,7 @@
             font-size: #{math.div(14, $base-font-size)}rem;
 
             @include themify() {
-              color: getThemifyVariable("modal-border-color");
+              color: getThemifyVariable('modal-border-color');
             }
           }
 
@@ -87,7 +89,7 @@
   top: 0;
   z-index: 1;
   @include themify() {
-    background-color: getThemifyVariable("background-color");
+    background-color: getThemifyVariable('background-color');
   }
 }
 
@@ -102,7 +104,7 @@
 
   & svg {
     @include themify() {
-      fill: getThemifyVariable("inactive-text-color");
+      fill: getThemifyVariable('inactive-text-color');
     }
   }
 }
@@ -111,13 +113,13 @@
   border-bottom: 2px dashed transparent;
   padding: #{math.div(3, $base-font-size)}rem 0;
   @include themify() {
-    color: getThemifyVariable("inactive-text-color");
+    color: getThemifyVariable('inactive-text-color');
   }
 }
 
 .sketches-table__header--selected {
   @include themify() {
-    border-color: getThemifyVariable("logo-color");
+    border-color: getThemifyVariable('logo-color');
   }
 }
 
@@ -133,7 +135,7 @@
 
 .sketches-table__row:nth-child(odd) {
   @include themify() {
-    background: getThemifyVariable("table-row-stripe-color");
+    background: getThemifyVariable('table-row-stripe-color');
   }
 }
 
@@ -147,7 +149,7 @@
 
 .sketches-table__row a {
   @include themify() {
-    color: getThemifyVariable("primary-text-color");
+    color: getThemifyVariable('primary-text-color');
   }
 }
 
@@ -158,7 +160,7 @@
 .sketches-table thead {
   font-size: #{math.div(12, $base-font-size)}rem;
   @include themify() {
-    color: getThemifyVariable("inactive-text-color");
+    color: getThemifyVariable('inactive-text-color');
   }
 }
 

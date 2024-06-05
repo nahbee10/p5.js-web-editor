@@ -7,7 +7,7 @@
   font-size: #{math.div(12, $base-font-size)}rem;
   text-align: left;
   @include themify() {
-    color: getThemifyVariable("error-color");
+    color: getThemifyVariable('error-color');
   }
 }
 
@@ -29,7 +29,7 @@
   margin-top: #{math.div(16, $base-font-size)}rem;
   font-size: #{math.div(12, $base-font-size)}rem;
   @include themify() {
-    color: getThemifyVariable("form-navigation-options-color");
+    color: getThemifyVariable('form-navigation-options-color');
   }
 
   @media (max-width: 550px) {
@@ -49,7 +49,7 @@
   margin-bottom: #{math.div(7, $base-font-size)}rem;
   display: block;
   @include themify() {
-    color: getThemifyVariable("form-secondary-title-color");
+    color: getThemifyVariable('form-secondary-title-color');
   }
 }
 
@@ -63,13 +63,13 @@
   height: #{math.div(40, $base-font-size)}rem;
   font-size: #{math.div(16, $base-font-size)}rem;
   @include themify() {
-    color: getThemifyVariable("form-input-text-color");
-    background-color: getThemifyVariable("input-background-color");
+    color: getThemifyVariable('form-input-text-color');
+    background-color: getThemifyVariable('input-background-color');
   }
 
   @media (max-width: 770px) {
     max-width: 100%;
-    width:100%;
+    width: 100%;
   }
 }
 
@@ -79,7 +79,7 @@
 
 .form__input::placeholder {
   @include themify() {
-    color: getThemifyVariable("form-input-placeholder-text-color");
+    color: getThemifyVariable('form-input-placeholder-text-color');
   }
 }
 
@@ -90,11 +90,11 @@
 
 .form__status {
   @include themify() {
-    color: getThemifyVariable("form-navigation-options-color");
+    color: getThemifyVariable('form-navigation-options-color');
   }
 }
 
-.form [type="submit"] {
+.form [type='submit'] {
   margin-left: auto;
   margin-right: auto;
 }

@@ -22,8 +22,8 @@
 }
 
 .copyable-input__label-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyable-input {
@@ -45,8 +45,7 @@
 }
 
 .tooltipped-n::before,
-.tooltipped::before
- {
+.tooltipped::before {
   @include themify() {
     color: getThemifyVariable('button-background-hover-color');
     border-top-color: getThemifyVariable('button-background-hover-color');

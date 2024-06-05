@@ -87,7 +87,7 @@
     "LogoARIA": "{{serviceauth}} logo"
   },
   "About": {
-    "Title": "Über",  
+    "Title": "Über",
     "TitleHelmet": "p5.js Web Editor | Über",
     "Contribute": "Mitwirken",
     "NewP5": "Neu bei p5.js?",
@@ -599,8 +599,8 @@
     "Logout": "Abmelden"
   },
   "MobileDashboardView": {
-    "Examples":  "Beispiele",
-    "Sketches":  "Sketche",
+    "Examples": "Beispiele",
+    "Sketches": "Sketche",
     "Collections": "Sammlungen",
     "Assets": "Assets",
     "MyStuff": "Mein Zeug",
@@ -611,4 +611,3 @@
     "Files": "Dateien"
   }
 }
-

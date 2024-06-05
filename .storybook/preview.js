@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router';
 
 import configureStore from '../client/store';
 import '../client/i18n-test';
-import '../client/styles/storybook.css'
+import '../client/styles/storybook.css';
 import { withThemeProvider, themeToolbarItem } from './decorator-theme';
 
 const initialState = window.__INITIAL_STATE__;

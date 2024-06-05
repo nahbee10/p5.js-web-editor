@@ -1,6 +1,6 @@
 name: 💡 Existing Feature Enhancement
 description: Suggest an improvement to an existing feature.
-labels: [ Enhancement ]
+labels: [Enhancement]
 body:
   - type: textarea
     attributes:

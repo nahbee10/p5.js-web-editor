@@ -15,26 +15,27 @@ _Note_: The installation steps assume you are using a Unix-like shell. If you ar
    ```
 
 4. If you are using nvm, run `$ nvm use 16.14.2` to set your Node version to 16.14.2
-5. Ensure your npm version is set to 8.5.0. If it isn't, run `npm install -g npm@8.5.0` to install it. 
+5. Ensure your npm version is set to 8.5.0. If it isn't, run `npm install -g npm@8.5.0` to install it.
 6. Navigate into the project folder and install all its necessary dependencies with npm.
 
    ```
    $ cd p5.js-web-editor
    $ npm install
    ```
+
 7. Install MongoDB and make sure it is running
-   * For Mac OSX with [homebrew](http://brew.sh/): `brew tap mongodb/brew` then `brew install mongodb-community` and finally start the server with `brew services start mongodb-community` or you can visit the installation guide here [Installation Guide For MacOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
-   * For Windows and Linux: [MongoDB Installation](https://docs.mongodb.com/manual/installation/)
+   - For Mac OSX with [homebrew](http://brew.sh/): `brew tap mongodb/brew` then `brew install mongodb-community` and finally start the server with `brew services start mongodb-community` or you can visit the installation guide here [Installation Guide For MacOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+   - For Windows and Linux: [MongoDB Installation](https://docs.mongodb.com/manual/installation/)
 8. `$ cp .env.example .env`
 9. (Optional) Update `.env` with necessary keys to enable certain app behaviors, i.e. add Github ID and Github Secret if you want to be able to log in with Github.
-   * See the [GitHub API Configuration](#github-api-configuration) section for information on how to authenticate with Github.
-   * See the [S3 Bucket Configuration](#s3-bucket-configuration) section for information on how to set up an S3 bucket
-11. Run `$ npm run fetch-examples` to download the example sketches into a user called 'p5'. Note that you need to configure your GitHub Credentials, which you can do by following the [Github API Configuration](#github-api-configuration) section.
-12. Enable Prettier in your text editor by following [this guide](https://prettier.io/docs/en/editors.html).
-13. `$ npm start`
-14. Navigate to [http://localhost:8000](http://localhost:8000) in your browser
-15. Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-16. Open and close the Redux DevTools using `ctrl+h`, and move them with `ctrl+w`
+   - See the [GitHub API Configuration](#github-api-configuration) section for information on how to authenticate with Github.
+   - See the [S3 Bucket Configuration](#s3-bucket-configuration) section for information on how to set up an S3 bucket
+10. Run `$ npm run fetch-examples` to download the example sketches into a user called 'p5'. Note that you need to configure your GitHub Credentials, which you can do by following the [Github API Configuration](#github-api-configuration) section.
+11. Enable Prettier in your text editor by following [this guide](https://prettier.io/docs/en/editors.html).
+12. `$ npm start`
+13. Navigate to [http://localhost:8000](http://localhost:8000) in your browser
+14. Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+15. Open and close the Redux DevTools using `ctrl+h`, and move them with `ctrl+w`
 
 ## Docker Installation
 
@@ -45,16 +46,16 @@ Using Docker, you can have a complete, consistent development environment withou
 Note that this takes up a significant amount of space on your machine. Make sure you have at least 5GB free.
 
 1. Install Docker for your operating system
-   * [Mac](https://www.docker.com/docker-mac)
-   * [Windows](https://www.docker.com/docker-windows)
+   - [Mac](https://www.docker.com/docker-mac)
+   - [Windows](https://www.docker.com/docker-windows)
 2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 3. Clone this repository and cd into it
 4. `$ docker-compose -f docker-compose-development.yml build`
 5. `$ cp .env.example .env`
 6. (Optional) Update `.env` with necessary keys to enable certain app behaviors, i.e. add Github ID and Github Secret if you want to be able to log in with Github.
-   * See the [GitHub API Configuration](#github-api-configuration) section for information on how to authenticate with Github.
-   * See the [S3 Bucket Configuration](#s3-bucket-configuration) section for information on how to set up an S3 bucket
-7. `$ docker-compose -f docker-compose-development.yml run --rm app npm run fetch-examples` -  note that you need to configure your GitHub Credentials, which you can do by following the [Github API Configuration](#github-api-configuration) section.
+   - See the [GitHub API Configuration](#github-api-configuration) section for information on how to authenticate with Github.
+   - See the [S3 Bucket Configuration](#s3-bucket-configuration) section for information on how to set up an S3 bucket
+7. `$ docker-compose -f docker-compose-development.yml run --rm app npm run fetch-examples` - note that you need to configure your GitHub Credentials, which you can do by following the [Github API Configuration](#github-api-configuration) section.
 8. Enable Prettier in your text editor by following [this guide](https://prettier.io/docs/en/editors.html).
 
 Now, anytime you wish to start the server with its dependencies, you can run:
@@ -74,23 +75,26 @@ If you don't have the full server environment running, you can launch a one-off 
 
 See [this configuration guide](./s3_configuration.md) for information about how to configure your own S3 bucket. These instructions were adapted from [this gist](https://gist.github.com/catarak/70c9301f0fd1ac2d6b58de03f61997e3).
 
-Note that this is optional unless you are working on the part of the application that allows a user to upload images, videos, etc. 
+Note that this is optional unless you are working on the part of the application that allows a user to upload images, videos, etc.
 
 ## GitHub API Configuration
 
 In this application, GitHub credentials are used for:
-* Authentication with GitHub
-* Importing the p5.js examples to your local database
-* Rendering the 404 pages
+
+- Authentication with GitHub
+- Importing the p5.js examples to your local database
+- Rendering the 404 pages
 
 If you are working on a part of the application that requires one of the above uses, then you will need to get GitHub API credentials.
 
 When you go to the [Developer settings](https://github.com/settings/developers) in your GitHub account, you will see that you can create two types of Apps: `GitHub Apps` and `OAuth Apps` ([differences between GitHub Apps and OAuth Apps](https://docs.github.com/en/free-pro-team@latest/developers/apps/differences-between-github-apps-and-oauth-apps)). This project requires you to make an `OAuth App`. After clicking on "New OAuth App", you will need to fill in the following fields:
+
 - **Application name**: `p5.js Web Editor - Local`
 - **Homepage URL**: `http://localhost:8000`
 - **Authorization Callback URL**: `http://localhost:8000/auth/github/callback`
 
 Once you've created a new OAuth app, update your `.env`:
+
 ```
 GITHUB_ID={GITHUB_ID}
 GITHUB_SECRET={GITHUB_SECRET}

@@ -29,7 +29,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     modules: ['client', 'node_modules'],
     fallback: {
       os: require.resolve('os-browserify/browser')
@@ -37,12 +37,12 @@ module.exports = {
   },
   plugins: [
     new ESLintPlugin({
-      extensions: ['js', 'jsx']
+      extensions: ['js', 'jsx', '.ts', '.tsx']
     }),
     new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshPlugin({
       overlay: {
-        sockIntegration: 'whm',
+        sockIntegration: 'whm'
       }
     }),
     new webpack.DefinePlugin({
@@ -72,6 +72,11 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /main\.scss$/,

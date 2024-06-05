@@ -235,10 +235,10 @@
     "SubmitFeedback": "Enviar Feedback",
     "SubmitFeedbackARIA": "enviar-feedback",
     "AddCollectionTitle": "Adicionar à coleção",
-    "AddCollectionARIA":"adicionar à coleção",
+    "AddCollectionARIA": "adicionar à coleção",
     "ShareTitle": "Compartilhar",
-    "ShareARIA":"compartilhar"
-  }, 
+    "ShareARIA": "compartilhar"
+  },
   "NewFileModal": {
     "Title": "Criar Arquivos",
     "CloseButtonARIA": "Fechar Módulo de Criação de Arquivos",
@@ -434,7 +434,7 @@
     "Description": "descrição",
     "NumSketches": "{{count}} esboço",
     "NumSketches_plural": "{{count}} esboços",
-    "By":"Coleção por ",
+    "By": "Coleção por ",
     "NoSketches": "Não há esboços na coleção",
     "TableSummary": "tabela contendo todas as coleções",
     "HeaderName": "Nome",
@@ -472,7 +472,7 @@
     "Assets": "Recursos"
   },
   "CollectionList": {
-    "Title": "Editor de Web p5.js | Minhas Coleções", 
+    "Title": "Editor de Web p5.js | Minhas Coleções",
     "AnothersTitle": "Editor de Web p5.js |Coleções de {{anotheruser}}",
     "NoCollections": "Não há coleções.",
     "TableSummary": "tabela contendo todas as coleções",
@@ -498,7 +498,7 @@
   "Overlay": {
     "AriaLabel": "Fechar capa de{{title}}"
   },
-  "QuickAddList":{
+  "QuickAddList": {
     "ButtonRemoveARIA": "Remover da coleção",
     "ButtonAddToCollectionARIA": "Adicionar à coleção",
     "View": "Ver"
@@ -589,7 +589,7 @@
     "On": "Ligado",
     "Off": "Desligado"
   },
-  "MobileIDEView":{
+  "MobileIDEView": {
     "Preferences": "Preferências",
     "MyStuff": "Minhas Coisas",
     "Examples": "Exemplos",

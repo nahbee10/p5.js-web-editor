@@ -7,12 +7,13 @@ Pull-requests are easier when your code is up to date! You can use git rebase to
 ## Save and Update
 
 ### Save everything you have!
+
     git status
     git add -u
     git commit
 
-
 ### Find out about changes
+
 Make sure you're tracking the upstream p5.js repository.
 
     git remote show upstream
@@ -26,24 +27,31 @@ Then ask git about the latest changes.
     git fetch upstream
 
 ### Just in case: make a copy of your changes in a new branch
+
     git branch your-branch-name-backup
 
-### Apply changes from develop branch, adds your changes *after*
+### Apply changes from develop branch, adds your changes _after_
+
     git rebase upstream/develop
 
 ### Switches back to develop branch
+
     git checkout develop
 
 ### Helps other contributors fully understand the changes that you made
-    git commit -m "Fixed documentation typos"   
 
-### Verifies what git will be committing  
-    git status       
+    git commit -m "Fixed documentation typos"
+
+### Verifies what git will be committing
+
+    git status
 
 ## CONFLICTS
+
 You may have some conflicts! It's okay. Feel free to ask for help. If merging with the latest upstream `develop` branch causes conflicts, you can always make a pull request with the upstream repository, which makes the merge conflicts public.
 
 ## And finally, for the great glory
+
     git push --set-upstream origin your-branch-name-backup
 
 Here's a good reference on rebasing, in case you're intensely curious about the technical details. https://www.atlassian.com/git/tutorials/merging-vs-rebasing

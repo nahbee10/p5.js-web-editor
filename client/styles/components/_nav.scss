@@ -67,8 +67,9 @@
       color: getThemifyVariable('nav-hover-color');
     }
   }
-  
-  & g, & path {
+
+  & g,
+  & path {
     @include themify() {
       fill: getThemifyVariable('nav-hover-color');
     }
@@ -86,7 +87,8 @@
   @include themify() {
     color: getThemifyVariable('nav-hover-color');
   }
-  & g, & path {
+  & g,
+  & path {
     @include themify() {
       fill: getThemifyVariable('nav-hover-color');
     }
@@ -94,17 +96,17 @@
 }
 
 .nav__item-header-triangle {
-	margin-left: #{math.div(5, $base-font-size)}rem;
+  margin-left: #{math.div(5, $base-font-size)}rem;
 }
 
 .nav__dropdown {
   @include themify() {
-      color: getThemifyVariable('nav-hover-color');
-    }
+    color: getThemifyVariable('nav-hover-color');
+  }
 }
 
 .nav__item-header-triangle {
-	margin-left: #{math.div(5, $base-font-size)}rem;
+  margin-left: #{math.div(5, $base-font-size)}rem;
 }
 
 .nav__dropdown {
@@ -166,23 +168,18 @@
 }
 
 .svg__logo {
-
   @include themify() {
     // Set background color of the logo
     background-color: getThemifyVariable('logo-color');
   }
-
 }
 
-.svg__logo g path{
-  
+.svg__logo g path {
   @include themify() {
     // Set internal color of the logo;
     fill: getThemifyVariable('logo-background-color');
   }
-
 }
-
 
 .nav__keyboard-shortcut {
   font-size: #{math.div(12, $base-font-size)}rem;
@@ -200,7 +197,8 @@
 }
 
 .nav__back-icon {
-  & g, & path {
+  & g,
+  & path {
     opacity: 1;
     @include themify() {
       fill: getThemifyVariable('inactive-text-color');

@@ -238,9 +238,9 @@
     "SubmitFeedback": "Invia Feedback",
     "SubmitFeedbackARIA": "invia-feedback",
     "AddCollectionTitle": "Aggiungi a collezione",
-    "AddCollectionARIA":"aggiungi a collezione",
+    "AddCollectionARIA": "aggiungi a collezione",
     "ShareTitle": "Condividi",
-    "ShareARIA":"condividi"
+    "ShareARIA": "condividi"
   },
   "NewFileModal": {
     "Title": "Crea File",
@@ -437,7 +437,7 @@
     "Description": "descrizione",
     "NumSketches": "{{count}} sketch",
     "NumSketches_plural": "{{count}} sketch",
-    "By":"Collezione da ",
+    "By": "Collezione da ",
     "NoSketches": "Nessuno sketch nella collezione",
     "TableSummary": "pagina contenente tutte le collezioni",
     "HeaderName": "Nome",
@@ -501,7 +501,7 @@
   "Overlay": {
     "AriaLabel": "Chiudi {{title}} sovrapposizione"
   },
-  "QuickAddList":{
+  "QuickAddList": {
     "ButtonRemoveARIA": "Rimuovi dalla collezione",
     "ButtonAddToCollectionARIA": "Aggiungi alla collezione",
     "View": "Vista"
@@ -592,7 +592,7 @@
     "On": "On",
     "Off": "Off"
   },
-  "MobileIDEView":{
+  "MobileIDEView": {
     "Preferences": "Preferenze",
     "MyStuff": "Le mie cose",
     "Examples": "Esempi",

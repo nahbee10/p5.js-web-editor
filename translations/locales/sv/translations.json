@@ -235,9 +235,9 @@
     "SubmitFeedback": "Skicka feedback",
     "SubmitFeedbackARIA": "skicka-feedback",
     "AddCollectionTitle": "Lägg till i samling",
-    "AddCollectionARIA":"lägg till i samling",
+    "AddCollectionARIA": "lägg till i samling",
     "ShareTitle": "Dela",
-    "ShareARIA":"dela"
+    "ShareARIA": "dela"
   },
   "NewFileModal": {
     "Title": "Skapa fil",
@@ -434,7 +434,7 @@
     "Description": "beskrivning",
     "NumSketches": "{{count}} sketch",
     "NumSketches_plural": "{{count}} sketcher",
-    "By":"Samling av ",
+    "By": "Samling av ",
     "NoSketches": "Inga sketcher i samling",
     "TableSummary": "tabell med alla samlingar",
     "HeaderName": "Namn",
@@ -498,7 +498,7 @@
   "Overlay": {
     "AriaLabel": "Stäng {{title}} övre lager"
   },
-  "QuickAddList":{
+  "QuickAddList": {
     "ButtonRemoveARIA": "Ta bort från samling",
     "ButtonAddToCollectionARIA": "Lägg till i samling",
     "View": "Granska"
@@ -589,7 +589,7 @@
     "On": "På",
     "Off": "Av"
   },
-  "MobileIDEView":{
+  "MobileIDEView": {
     "Preferences": "Preferenser",
     "MyStuff": "Mina saker",
     "Examples": "Exempel",
@@ -621,4 +621,3 @@
     "CodeOfConduct": "Uppförandekod"
   }
 }
-

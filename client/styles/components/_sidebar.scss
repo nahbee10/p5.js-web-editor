@@ -45,7 +45,7 @@
 
 .sidebar__file-list {
   @include themify() {
-    border-color: getThemifyVariable('ide-border-color')
+    border-color: getThemifyVariable('ide-border-color');
   }
   border-top: 1px solid;
   .sidebar--contracted & {
@@ -236,14 +236,16 @@
   justify-content: center;
   align-items: center;
   @include themify() {
-    background-color: getThemifyVariable("toolbar-button-background-color");
-    & polygon, & path {
-      fill: getThemifyVariable("toolbar-button-color");
+    background-color: getThemifyVariable('toolbar-button-background-color');
+    & polygon,
+    & path {
+      fill: getThemifyVariable('toolbar-button-color');
     }
     &:hover {
-      background-color: getThemifyVariable("button-background-hover-color");
-      & polygon, & path {
-        fill: getThemifyVariable("button-hover-color");
+      background-color: getThemifyVariable('button-background-hover-color');
+      & polygon,
+      & path {
+        fill: getThemifyVariable('button-hover-color');
       }
     }
   }

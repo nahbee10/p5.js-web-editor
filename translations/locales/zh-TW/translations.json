@@ -238,9 +238,9 @@
     "SubmitFeedback": "提交回饋資訊",
     "SubmitFeedbackARIA": "提交回饋資訊",
     "AddCollectionTitle": "加入作品集",
-    "AddCollectionARIA":"加入作品即",
+    "AddCollectionARIA": "加入作品即",
     "ShareTitle": "分享",
-    "ShareARIA":"分享"
+    "ShareARIA": "分享"
   },
   "NewFileModal": {
     "Title": "建立檔案",
@@ -437,7 +437,7 @@
     "Description": "說明",
     "NumSketches": "{{count}} 個草稿",
     "NumSketches_plural": "{{count}} 個草稿",
-    "By":"作品集作者：",
+    "By": "作品集作者：",
     "NoSketches": "作品集中沒有草稿",
     "TableSummary": "作品集彙總表",
     "HeaderName": "名稱",
@@ -501,7 +501,7 @@
   "Overlay": {
     "AriaLabel": "關閉 {{title}} 重疊"
   },
-  "QuickAddList":{
+  "QuickAddList": {
     "ButtonRemoveARIA": "從作品集中移除",
     "ButtonAddToCollectionARIA": "加入作品集",
     "View": "檢視"
@@ -593,7 +593,7 @@
     "On": "啟用",
     "Off": "停用"
   },
-  "MobileIDEView":{
+  "MobileIDEView": {
     "Preferences": "偏好設定",
     "MyStuff": "我的資料",
     "Examples": "範例",

@@ -1,1 +1,3 @@
-export const isMac = () => navigator.userAgent.toLowerCase().indexOf('mac') !== -1; // eslint-disable-line
+const isMac = () => navigator.userAgent.toLowerCase().indexOf('mac') !== -1; // eslint-disable-line
+
+export default isMac;

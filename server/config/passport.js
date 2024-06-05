@@ -55,9 +55,9 @@ passport.use(
 
         if (isMatch) {
           return done(null, user);
-        } else { // eslint-disable-line
-          return done(null, false, { msg: 'Invalid email or password' });
         }
+          // eslint-disable-line
+        return done(null, false, { msg: 'Invalid email or password' });
       } catch (err) {
         console.error(err);
         return done(null, false, { msg: err });

@@ -14,8 +14,8 @@ services:
     # uncomment the following lines if you don't want export all of the variables
     # defined in your .env file for testing
     env_file:
-    #   - "$PWD/.env.production"
-      - "$PWD/.env"
+      #   - "$PWD/.env.production"
+      - '$PWD/.env'
     # environment:
     #   - API_URL
     #   - AWS_ACCESS_KEY
@@ -48,9 +48,9 @@ services:
     #   - TRANSLATIONS_ENABLED
     #   - UI_ACCESS_TOKEN_ENABLED
     #   - UPLOAD_LIMIT
-      # you can either set this in your .env or as an environment variables
-      # or here YOU CHOOSE
-      # - MONGO_URL=mongodb://mongo:27017/p5js-web-editor
+    # you can either set this in your .env or as an environment variables
+    # or here YOU CHOOSE
+    # - MONGO_URL=mongodb://mongo:27017/p5js-web-editor
     volumes:
       - .:/opt/node/app
       - /opt/node/app/node_modules
